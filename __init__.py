@@ -27,7 +27,7 @@ class Skill(MycroftSkill):
      try:
             number = message.data.get("number")
             response = {'number': message.data.get("number")}
-	        url = "https://ip0rzvwy82.execute-api.us-east-1.amazonaws.com/Test/mycroft-skill-emp-details"
+	    url = "https://ip0rzvwy82.execute-api.us-east-1.amazonaws.com/Test/mycroft-skill-emp-details"
             key="{\n\t\"inputparams\":"
             value="hridul gupta"
             key1 = "\""+value+"\"\n}"
