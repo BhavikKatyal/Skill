@@ -27,7 +27,7 @@ class Skill(MycroftSkill):
      try:
             number = message.data.get("number")
             response = {'number': message.data.get("number")}
-	          url = "https://ip0rzvwy82.execute-api.us-east-1.amazonaws.com/Test/mycroft-skill-emp-details"
+	    url = "https://ip0rzvwy82.execute-api.us-east-1.amazonaws.com/Test/mycroft-skill-emp-details"
             key="{\n\t\"inputparams\":"
             value="hridul gupta"
             key1 = "\""+value+"\"\n}"
@@ -39,7 +39,7 @@ class Skill(MycroftSkill):
             response = requests.request("POST", url, data=payload, headers=headers)
             data = json.loads(response.text)
             data2 = json.loads(data['body'])
-	          ha=data2['emp_id']
+	    ha=data2['emp_id']
             self.speak_dialog("Id is {ha}")
     except:
             self.speak_dialog("error")
