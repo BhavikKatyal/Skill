@@ -39,6 +39,7 @@ class Skill(MycroftSkill):
             response = requests.request("POST", url, data=payload, headers=headers)
             data = json.loads(response.text)
             data2 = json.loads(data['body'])
+	    ha=data2['emp_id']
             self.speak_dialog("Id is {ha}")
     except:
             self.speak_dialog("error")
