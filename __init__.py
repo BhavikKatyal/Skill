@@ -38,7 +38,7 @@ class Skill(MycroftSkill):
             url = "https://ip0rzvwy82.execute-api.us-east-1.amazonaws.com/Test/mycroft-skill-emp-details"
 
             key="{\n\t\"inputparams\":"
-            value="hridul gupta"
+            value=number
             key1 = "\""+value+"\"\n}"
             payload = key + key1
             headers = {
